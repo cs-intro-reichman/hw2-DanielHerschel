@@ -14,7 +14,7 @@ public class Cheers {
         int printCount = Integer.parseInt(args[1]);
 
         for (char letter : message.toCharArray()) {
-            if (anLetters.indexOf(letter) != -1) {
+            if (anLetters.indexOf(Character.toUpperCase(letter)) != -1) {
                 System.out.printf("Give me an %c: %c!%n", letter, letter);
                 continue;
             }
