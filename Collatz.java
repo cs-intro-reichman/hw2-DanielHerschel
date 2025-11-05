@@ -7,16 +7,10 @@ public class Collatz {
         boolean verbose = mode.equals("v");
 
         for (int seedN = 1 ; seedN <= seed ; seedN++) {
-            int sequenceCount = 0, n = seedN;
+            int sequenceCount = 1, n = seedN;
             String messageRow = "" + n;
 
-            // Setting n to 4 for the first sequence.
-            if (n == 1) {
-                n = 4;
-                messageRow += " " + n;
-            }
-
-            while (n != 1) {
+            do {
                 // Collatz Logic
                 if (n % 2 == 0) {
                     n /= 2;
@@ -26,7 +20,7 @@ public class Collatz {
 
                 messageRow += " " + n;
                 sequenceCount++;
-            }
+            } while (n != 1);
 
             if (verbose) {
                 System.out.println(messageRow + " (" + sequenceCount + ") ");
