@@ -15,16 +15,16 @@ public class Cheers {
 
         for (char letter : message.toCharArray()) {
             if (anLetters.indexOf(Character.toUpperCase(letter)) != -1) {
-                System.out.printf("Give me an %c: %c!%n", letter, letter);
+                System.out.printf("Give me an %c: %c!\n", letter, letter);
                 continue;
             }
 
-            System.out.printf("Give me a %c: %c!%n", letter, letter);
+            System.out.printf("Give me a %c: %c!\n", letter, letter);
         }
 
         System.out.println("What does that spell?");
         for (int i = 0; i < printCount; i++) {
-            System.out.println(message + "!!!");
+            System.out.println(message.toUpperCase() + "!!!");
         }
     }
 }

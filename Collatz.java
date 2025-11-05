@@ -13,6 +13,7 @@ public class Collatz {
             // Setting n to 4 for the first sequence.
             if (n == 1) {
                 n = 4;
+                messageRow += " " + n;
             }
 
             while (n != 1) {
