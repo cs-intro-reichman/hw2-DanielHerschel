@@ -19,7 +19,7 @@ public class Cheers {
                 continue;
             }
 
-            System.out.printf("Give me a %c: %c!\n", letter, letter);
+            System.out.printf("Give me a  %c: %c!\n", letter, letter);
         }
 
         System.out.println("What does that spell?");
