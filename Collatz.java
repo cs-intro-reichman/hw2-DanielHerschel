@@ -23,7 +23,7 @@ public class Collatz {
             } while (n != 1);
 
             if (verbose) {
-                System.out.println(messageRow + " (" + sequenceCount + ") ");
+                System.out.println(messageRow + " (" + sequenceCount + ")");
             }
         }
 
